@@ -1,0 +1,53 @@
+.app__card {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+
+  padding: 2rem;
+
+  p {
+    text-align: left;
+  }
+
+  .app__card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+    img {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+
+    svg {
+      margin-left: 5px;
+      color: #fea250;
+    }
+
+    .app__card-head_icon {
+      display: flex;
+      align-items: center;
+      text-align: start;
+
+      p {
+        line-height: 20px;
+      }
+
+      p:first-child {
+        color: var(--black-color);
+        font-weight: 500;
+      }
+    }
+  }
+  &:hover {
+    border: 1px solid var(--red-color);
+  }
+
+  @media screen and (max-width: 950px) {
+    width: 70%;
+  }
+}

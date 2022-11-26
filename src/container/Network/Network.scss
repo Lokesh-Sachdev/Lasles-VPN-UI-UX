@@ -1,0 +1,28 @@
+.app__network {
+  text-align: center;
+
+  img {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 5rem 0 3rem 0;
+  }
+
+  div {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+
+    @media screen and (max-width: 650px) {
+      img {
+        width: 75px;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      img {
+        width: 50px;
+      }
+    }
+  }
+}

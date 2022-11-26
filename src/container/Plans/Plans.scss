@@ -1,0 +1,71 @@
+.app__plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .app__plans-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+
+    margin-top: 3rem;
+
+    .plan__box {
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+
+      padding: 3rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        margin: 23px 0 10px 0;
+      }
+
+      button {
+        background: #fff;
+        color: var(--red-color);
+        font-family: var(--font-base);
+        font-weight: 700;
+        border: 1px solid var(--red-color);
+        border-radius: 23.5px;
+
+        padding: 0.5rem 3rem;
+        align-items: flex-end;
+        cursor: pointer;
+
+        &:hover {
+          background: var(--red-color);
+          box-shadow: 0 5px rgba(245, 56, 56, 0.35);
+
+          color: #fff;
+          border: none;
+        }
+
+        &:active {
+          background-color: var(--red-color);
+          color: #fff;
+          transform: translateY(4px);
+        }
+      }
+
+      span {
+        color: var(--grey-color);
+      }
+
+      &:hover {
+        border: 1px solid var(--red-color);
+      }
+    }
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

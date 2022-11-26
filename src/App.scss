@@ -1,0 +1,158 @@
+.app {
+  font-family: var(--font-base);
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.app__wrapper_info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.app__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.app__wrapper_img img {
+  width: 80%;
+}
+
+.custom__button {
+  font-family: var(--font-base);
+  font-weight: 700;
+  line-height: 25px;
+  font-size: 16px;
+
+  background-color: var(--red-color);
+  box-shadow: 0 10px rgba(245, 56, 56, 0.15);
+  color: #fff;
+
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+    color: var(--red-color);
+    border: 1px solid var(--red-color);
+  }
+
+  &:active {
+    background-color: var(--red-color);
+    color: #fff;
+    box-shadow: 0 5px rgba(245, 56, 56, 0.35);
+    transform: translateY(4px);
+  }
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--grey-color);
+}
+
+@media screen and (min-width: 2000px) {
+  .custom__button,
+  .p__cormorant {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  .p__opensans {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .headtext__cormorant {
+    font-size: 150px;
+    line-height: 210px;
+  }
+
+  .spoon__img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__wrapper {
+    flex-direction: column;
+  }
+
+  .app__wrapper_img {
+    margin: 5rem 0 0 0;
+  }
+
+  .app__wrapper_img-reverse {
+    margin: 0 0 5rem 0;
+  }
+
+  .app__wrapper_img img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section__padding {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

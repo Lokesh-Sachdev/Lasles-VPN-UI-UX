@@ -1,0 +1,22 @@
+.app__banner {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+  div {
+    flex: 1;
+  }
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

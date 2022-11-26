@@ -1,0 +1,45 @@
+.app__testimonial {
+  text-align: center;
+
+  .app__testimonial-head {
+    margin-bottom: 2rem;
+  }
+
+  .app__testimonial-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .app__testimonial-card_arrows {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 3rem;
+
+    svg {
+      font-size: 3rem;
+      cursor: pointer;
+      margin-right: 1rem;
+
+      &:hover {
+        color: var(--black-color);
+      }
+    }
+
+    .card__arrow-left {
+      color: var(--red-color);
+    }
+
+    .card__arrow-right {
+      color: var(--red-color);
+    }
+  }
+}
